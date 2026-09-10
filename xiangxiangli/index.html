@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>香香莉女鞋-时尚女鞋品牌精选与舒适穿搭指南</title>
+    <meta name="description" content="香香莉女鞋专注于时尚与舒适并重的女鞋设计，为您提供单鞋、凉鞋、靴子、休闲鞋等全品类选购指南与品牌资讯，帮助您轻松找到适合日常与通勤的理想鞋履。">
+    <meta name="keywords" content="香香莉女鞋,香香莉,女鞋,时尚女鞋,舒适女鞋,单鞋,凉鞋,短靴,通勤鞋">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            background: #faf7f5;
+            color: #3d2e2a;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ===== Header ===== */
+        .site-header {
+            background: #fffaf6;
+            border-bottom: 1px solid #f0e2d8;
+            padding: 18px 0;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            box-shadow: 0 2px 8px rgba(120, 80, 60, 0.04);
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo-icon {
+            width: 44px;
+            height: 44px;
+            background: #c98b6e;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 24px;
+            font-weight: 600;
+            box-shadow: 0 4px 10px rgba(201, 139, 110, 0.3);
+        }
+        .logo-text h1 {
+            font-size: 1.7rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #5b3a2e;
+        }
+        .logo-text span {
+            font-size: 0.8rem;
+            color: #a77b63;
+            letter-spacing: 2px;
+        }
+        .main-nav ul {
+            display: flex;
+            list-style: none;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .main-nav a {
+            display: inline-block;
+            padding: 8px 18px;
+            text-decoration: none;
+            color: #5b3a2e;
+            font-weight: 500;
+            border-radius: 40px;
+            transition: all 0.2s;
+            font-size: 0.95rem;
+        }
+        .main-nav a:hover, .main-nav a.active {
+            background: #c98b6e;
+            color: #fff;
+        }
+
+        /* ===== Hero / 首屏 ===== */
+        .hero {
+            background: linear-gradient(135deg, #f7e9e0 0%, #fdf2ec 100%);
+            padding: 52px 0 40px;
+            border-bottom: 1px solid #f0dfd4;
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 36px;
+            align-items: center;
+        }
+        .hero-copy h2 {
+            font-size: 2.4rem;
+            line-height: 1.3;
+            color: #4a2e22;
+            margin-bottom: 18px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .hero-copy p {
+            font-size: 1.05rem;
+            color: #7c5e50;
+            margin-bottom: 28px;
+            max-width: 560px;
+        }
+        .hero-cta {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+        .btn {
+            padding: 12px 28px;
+            border-radius: 40px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.2s;
+            border: none;
+            cursor: pointer;
+            font-size: 0.95rem;
+        }
+        .btn-primary {
+            background: #c98b6e;
+            color: #fff;
+            box-shadow: 0 6px 14px rgba(201, 139, 110, 0.35);
+        }
+        .btn-primary:hover {
+            background: #b87458;
+            transform: translateY(-2px);
+        }
+        .btn-outline {
+            background: transparent;
+            border: 2px solid #c98b6e;
+            color: #b87458;
+        }
+        .btn-outline:hover {
+            background: #c98b6e;
+            color: #fff;
+        }
+        .hero-visual {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .visual-card {
+            background: #fff;
+            border-radius: 36px;
+            padding: 28px 28px 22px;
+            box-shadow: 0 20px 40px rgba(160, 110, 80, 0.15);
+            width: 100%;
+            max-width: 380px;
+            text-align: center;
+            border: 1px solid #f4e3d8;
+        }
+        .visual-card .shoe-emoji {
+            font-size: 5.5rem;
+            line-height: 1;
+            display: block;
+            margin-bottom: 8px;
+        }
+        .visual-card h3 {
+            font-size: 1.4rem;
+            color: #4a2e22;
+            margin-bottom: 6px;
+        }
+        .visual-card p {
+            color: #a07b66;
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+        }
+        .visual-card .tag-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 14px;
+        }
+        .visual-card .tag-list span {
+            background: #f7eae2;
+            color: #8e674f;
+            border-radius: 20px;
+            padding: 4px 14px;
+            font-size: 0.8rem;
+        }
+
+        /* ===== 分类栏目 ===== */
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #4a2e22;
+            margin: 44px 0 16px;
+            position: relative;
+            display: inline-block;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            width: 60%;
+            height: 3px;
+            background: #c98b6e;
+            border-radius: 4px;
+        }
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin: 28px 0 10px;
+        }
+        .cat-card {
+            background: #fff;
+            border-radius: 20px;
+            padding: 28px 20px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.02);
+            border: 1px solid #f1e4da;
+            transition: all 0.25s;
+            cursor: pointer;
+        }
+        .cat-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 14px 30px rgba(201, 139, 110, 0.15);
+            border-color: #dbb8a4;
+        }
+        .cat-card .cat-icon {
+            font-size: 3rem;
+            margin-bottom: 12px;
+        }
+        .cat-card h3 {
+            font-size: 1.2rem;
+            color: #4a2e22;
+            margin-bottom: 8px;
+        }
+        .cat-card p {
+            font-size: 0.88rem;
+            color: #a08a7c;
+            line-height: 1.4;
+        }
+
+        /* ===== 热门精选 ===== */
+        .featured-section {
+            background: #fff;
+            padding: 30px 0 50px;
+            margin-top: 30px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin-top: 24px;
+        }
+        .product-card {
+            background: #fdfaf8;
+            border-radius: 18px;
+            overflow: hidden;
+            border: 1px solid #f2e4da;
+            transition: all 0.25s;
+        }
+        .product-card:hover {
+            box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+            transform: translateY(-4px);
+        }
+        .product-img {
+            height: 180px;
+            background: #ead9cd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: #fff;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        .badge {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: #c98b6e;
+            color: #fff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        .product-info {
+            padding: 18px 16px 20px;
+        }
+        .product-info h3 {
+            font-size: 1rem;
+            color: #4a2e22;
+            margin-bottom: 6px;
+            font-weight: 600;
+        }
+        .product-info .desc {
+            font-size: 0.85rem;
+            color: #9b8476;
+            margin-bottom: 12px;
+        }
+        .product-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .price {
+            color: #b87458;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+        .btn-mini {
+            background: #f3e6de;
+            border: none;
+            padding: 6px 16px;
+            border-radius: 30px;
+            color: #8e674f;
+            font-size: 0.8rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .btn-mini:hover {
+            background: #c98b6e;
+            color: #fff;
+        }
+
+        /* ===== 穿搭灵感 / 资讯 ===== */
+        .insight-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+            margin: 30px 0 20px;
+        }
+        .insight-card {
+            background: #fff;
+            border-radius: 18px;
+            padding: 24px;
+            border: 1px solid #f1e2d7;
+            transition: all 0.2s;
+        }
+        .insight-card:hover {
+            box-shadow: 0 12px 24px rgba(0,0,0,0.04);
+        }
+        .insight-card .date {
+            font-size: 0.8rem;
+            color: #c0a392;
+            margin-bottom: 10px;
+        }
+        .insight-card h3 {
+            font-size: 1.1rem;
+            color: #4a2e22;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+        .insight-card p {
+            font-size: 0.9rem;
+            color: #8b7467;
+        }
+        .insight-card a {
+            display: inline-block;
+            margin-top: 14px;
+            color: #c98b6e;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        /* ===== 选购指南 / 注意事项 ===== */
+        .tips-section {
+            background: #f6eee9;
+            padding: 40px 0;
+            margin-top: 30px;
+        }
+        .tips-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 20px;
+        }
+        .tips-block h3 {
+            font-size: 1.3rem;
+            color: #4a2e22;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .tips-list {
+            list-style: none;
+        }
+        .tips-list li {
+            padding: 10px 0;
+            border-bottom: 1px dashed #dfc8b8;
+            font-size: 0.95rem;
+            color: #6d5548;
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+        }
+        .tips-list li::before {
+            content: "✓";
+            color: #c98b6e;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        /* ===== FAQ ===== */
+        .faq-section {
+            padding: 40px 0 50px;
+        }
+        .faq-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px 40px;
+            margin-top: 30px;
+        }
+        .faq-item {
+            background: #fff;
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid #f1e2d7;
+        }
+        .faq-item h3 {
+            font-size: 1.05rem;
+            color: #4a2e22;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        .faq-item p {
+            font-size: 0.9rem;
+            color: #7c6457;
+        }
+
+        /* ===== 页脚 ===== */
+        .site-footer {
+            background: #4a3328;
+            color: #dcc9bd;
+            padding: 40px 0 30px;
+            margin-top: 30px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        .footer-brand h3 {
+            color: #fff;
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+        }
+        .footer-brand p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            max-width: 300px;
+        }
+        .footer-links h4 {
+            color: #fff;
+            font-size: 1rem;
+            margin-bottom: 14px;
+        }
+        .footer-links ul {
+            list-style: none;
+        }
+        .footer-links li {
+            margin-bottom: 8px;
+        }
+        .footer-links a {
+            color: #dcc9bd;
+            text-decoration: none;
+            font-size: 0.9rem;
+            opacity: 0.85;
+        }
+        .footer-links a:hover {
+            opacity: 1;
+            color: #fff;
+        }
+        .copyright {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            text-align: center;
+            font-size: 0.85rem;
+            opacity: 0.7;
+        }
+
+        /* ===== 响应式 ===== */
+        @media (max-width: 992px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .hero-copy p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .hero-cta {
+                justify-content: center;
+            }
+            .category-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .insight-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .tips-grid, .faq-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 0 16px;
+            }
+            .header-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+            .main-nav ul {
+                justify-content: center;
+            }
+            .hero-copy h2 {
+                font-size: 1.9rem;
+            }
+            .category-grid, .product-grid, .insight-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .footer-brand p {
+                margin: 0 auto;
+            }
+            .logo-text h1 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <div class="logo-area">
+            <div class="logo-icon">香</div>
+            <div class="logo-text">
+                <h1>香香莉女鞋</h1>
+                <span>XIANGLI WOMEN'S SHOES</span>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#" class="active">首页</a></li>
+                <li><a href="#">新品上市</a></li>
+                <li><a href="#">单鞋</a></li>
+                <li><a href="#">凉鞋</a></li>
+                <li><a href="#">短靴</a></li>
+                <li><a href="#">穿搭灵感</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- 首屏 Hero -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-copy">
+                <h2>发现舒适与时尚兼备的香香莉女鞋</h2>
+                <p>从通勤单鞋到休闲凉鞋，香香莉专注于女性日常穿着的每一个细节。精选柔软材质与优雅设计，让每一步都轻松自在。</p>
+                <div class="hero-cta">
+                    <a href="#" class="btn btn-primary">浏览本季新款</a>
+                    <a href="#" class="btn btn-outline">查看选购指南</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="visual-card">
+                    <span class="shoe-emoji">👠</span>
+                    <h3>2025 春季系列</h3>
+                    <p>轻量 · 柔软 · 透气</p>
+                    <div class="tag-list">
+                        <span>通勤百搭</span>
+                        <span>圆头舒适</span>
+                        <span>软底防滑</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分类导航 -->
+    <div class="container">
+        <h2 class="section-title">鞋履分类</h2>
+        <div class="category-grid">
+            <div class="cat-card">
+                <div class="cat-icon">🥿</div>
+                <h3>时尚单鞋</h3>
+                <p>轻盈舒适，适合春夏日常与通勤，简约而不失格调。</p>
+            </div>
+            <div class="cat-card">
+                <div class="cat-icon">👡</div>
+                <h3>气质凉鞋</h3>
+                <p>透气清爽，夏日出行优选，兼顾优雅与休闲感。</p>
+            </div>
+            <div class="cat-card">
+                <div class="cat-icon">👢</div>
+                <h3>百搭短靴</h3>
+                <p>秋冬必备，利落有型，轻松搭配裤装或裙装。</p>
+            </div>
+            <div class="cat-card">
+                <div class="cat-icon">👟</div>
+                <h3>休闲运动鞋</h3>
+                <p>柔软缓震，适合日常步行与轻运动，释放双脚压力。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 热门精选 -->
+    <section class="featured-section">
+        <div class="container">
+            <h2 class="section-title">本季人气之选</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-img">
+                        <span>🥿</span>
+                        <span class="badge">热卖</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>云感方头浅口单鞋</h3>
+                        <p class="desc">软底舒适 / 通勤约会两相宜</p>
+                        <div class="product-footer">
+                            <span class="price">¥299</span>
+                            <button class="btn-mini">查看详情</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <span>👡</span>
+                        <span class="badge">新品</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>法式粗跟凉鞋</h3>
+                        <p class="desc">复古方头 / 舒适粗跟</p>
+                        <div class="product-footer">
+                            <span class="price">¥359</span>
+                            <button class="btn-mini">查看详情</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <span>👢</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>简约切尔西短靴</h3>
+                        <p class="desc">弹力侧围 / 利落有型</p>
+                        <div class="product-footer">
+                            <span class="price">¥429</span>
+                            <button class="btn-mini">查看详情</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <span>👟</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>轻羽透气休闲鞋</h3>
+                        <p class="desc">轻盈缓震 / 久走不累</p>
+                        <div class="product-footer">
+                            <span class="price">¥339</span>
+                            <button class="btn-mini">查看详情</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 穿搭灵感 / 资讯 -->
+    <div class="container">
+        <h2 class="section-title">穿搭灵感与品牌资讯</h2>
+        <div class="insight-grid">
+            <div class="insight-card">
+                <div class="date">2025.03.12</div>
+                <h3>通勤女鞋怎么选？记住这三点不出错</h3>
+                <p>对于每天需要长时间行走或站立的职业女性来说，鞋子的舒适度和支撑性往往比外观更重要。建议优先选择柔软内里和带有一定缓冲的鞋底。</p>
+                <a href="#">阅读全文 →</a>
+            </div>
+            <div class="insight-card">
+                <div class="date">2025.03.05</div>
+                <h3>春夏交替，一双乐福鞋轻松切换风格</h3>
+                <p>乐福鞋兼具休闲与正式感，无论是搭配九分裤还是半身裙，都能让整体造型显得轻松有层次。香香莉新款乐福鞋采用细腻牛皮，越穿越柔软。</p>
+                <a href="#">阅读全文 →</a>
+            </div>
+            <div class="insight-card">
+                <div class="date">2025.02.26</div>
+                <h3>香香莉品牌故事：做一双懂女性的鞋</h3>
+                <p>每一双香香莉女鞋都经过多次楦型调整与试穿反馈，只为贴合东方女性的脚型特点。品牌坚持使用环保透气材料，让美丽与舒适并存。</p>
+                <a href="#">阅读全文 →</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 选购指南与保养建议 -->
+    <section class="tips-section">
+        <div class="container">
+            <h2 class="section-title">选鞋与保养小贴士</h2>
+            <div class="tips-grid">
+                <div class="tips-block">
+                    <h3>🦶 如何选择合适的尺码？</h3>
+                    <ul class="tips-list">
+                        <li>建议在下午或傍晚试鞋，此时脚部会轻微膨胀，更接近实际穿着状态。</li>
+                        <li>穿好袜子后，脚趾前应留有约0.5-1厘米的活动空间。</li>
+                        <li>不同鞋型（尖头/圆头）的尺码感受可能不同，必要时可考虑半码或加宽版。</li>
+                        <li>两只脚大小可能略有差异，应以较大的一只脚为选鞋标准。</li>
+                    </ul>
+                </div>
+                <div class="tips-block">
+                    <h3>✨ 延长鞋子寿命的日常护理</h3>
+                    <ul class="tips-list">
+                        <li>真皮材质避免雨天穿着，若沾湿需自然阴干，切勿暴晒或烘干。</li>
+                        <li>换季收纳前清洁鞋面，鞋内塞入纸团或鞋撑保持形状。</li>
+                        <li>鞋底磨损不均匀时，建议及时送至专业鞋店进行修复。</li>
+                        <li>定期使用专用护理油或防水喷雾，能有效延缓老化。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">常见问题</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>香香莉女鞋适合长时间走路吗？</h3>
+                    <p>香香莉大部分鞋款都侧重于日常通勤的舒适性，尤其是休闲鞋和部分单鞋系列，采用了柔软的乳胶鞋垫和防滑耐磨的鞋底，适合中低强度的长时间行走。如果是需要长时间站立或远足，建议选择更专业的运动鞋系列。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>如何判断自己是否需要买大半码？</h3>
+                    <p>如果您的脚型偏宽、脚背偏高，或者准备在夏季穿着薄袜、冬季穿着厚袜，那么建议选择比平时大半码的鞋款。同时，尖头鞋通常比圆头鞋需要更多的前掌空间。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>线上购买的退换货政策如何？</h3>
+                    <p>香香莉官方线上渠道一般支持七天无理由退换货，但需确保商品未经穿着、吊牌完整且不影响二次销售。具体细则建议在购买前查看商品页面或联系客服确认。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>新鞋磨脚怎么办？</h3>
+                    <p>新鞋尤其是硬质皮料在初期可能会有轻微磨脚现象，建议先穿着厚袜子在家中试走半小时，让皮质逐渐软化。也可以使用鞋撑或后跟贴来缓解摩擦。若持续磨脚严重，可能说明尺码或鞋型不适合，建议更换。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>香香莉女鞋</h3>
+                <p>专注于为现代女性打造舒适、时尚、高品质的鞋履。我们相信，一双好鞋能带你去更远的地方。</p>
+            </div>
+            <div class="footer-links">
+                <h4>选购指南</h4>
+                <ul>
+                    <li><a href="#">尺码对照表</a></li>
+                    <li><a href="#">鞋款保养</a></li>
+                    <li><a href="#">配送说明</a></li>
+                    <li><a href="#">退换货政策</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>关于我们</h4>
+                <ul>
+                    <li><a href="#">品牌故事</a></li>
+                    <li><a href="#">线下门店</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">加入我们</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 香香莉女鞋 版权所有 · 本页面仅为示例展示</p>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</body>
+</html>
